@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.psb.ipack.select_map.Frg_select_map"
+    tools:context=".new_order.select_map.Frg_select_map">
+
+    <fragment
+        android:id="@+id/frg_select_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".new_order.select_map.Frg_select_map" 
+        />
+
+    <RelativeLayout
+        android:id="@+id/frg_select_map_rel_pin"
+        android:layout_width="70dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/frg_select_map_btn_pin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_pin_map" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/frg_select_map_mark_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frg_select_map_rel_pin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/frg_select_map_btn_retry"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:cpb_cornerRadius="50dp"
+        app:cpb_iconComplete="@drawable/ic_reload"
+        app:cpb_iconError="@drawable/ic_reload"
+        app:cpb_selectorComplete="@drawable/selector_map_retry_success"
+        app:cpb_selectorError="@drawable/selector_map_retry_error"
+        app:cpb_selectorIdle="@drawable/selector_map_retry_idle"
+        app:cpb_textError="تلاش مجدد" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/frg_select_map_card_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="5dp"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/frg_select_map_text_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="مسافت"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/frg_select_map_text_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_select_map_text_distance"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:text="قیمت"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        
+    </android.support.v7.widget.CardView>
+    
+</RelativeLayout>

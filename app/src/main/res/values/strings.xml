@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">IPack</string>
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_user_name">نام کاربری</string>
+    <string name="prompt_password">رمز ورود</string>
+    <string name="action_sign_in">ورود یا ثبت نام</string>
+    <string name="action_sign_in_short">ورود</string>
+    <string name="error_invalid_email">نام کاربری معتبر نمی باشد</string>
+    <string name="error_invalid_password">رمز ورود کوتاه می باشد</string>
+    <string name="error_incorrect_password">رمز ورود نا معتبر</string>
+    <string name="error_field_required">این مقدار ضروری می باشد</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+
+    <!-- Strings related to login Details-->
+    <string name="prompt_name">نام و نام خانوادگی</string>
+    <string name="prompt_phone_number">شماره موبایل</string>
+    <string name="prompt_phone_province">استان</string>
+    <string name="prompt_phone_city">شهر</string>
+    <string name="prompt_address">آدرس</string>
+    <string name="prompt_details">توضیحات</string>
+    <string name="action_register">ثبت اطلاعات</string>
+    <string name="error_details">اطلاعات صحیح نمی باشد</string>
+</resources>
+

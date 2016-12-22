@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#2196F3"
+   >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/RelativeLayoutSheet"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="#2196F3"
+    app:behavior_hideable="true"
+    >
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/dialog_new_order_spinner_Cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/dialog_new_order_spinner_SubCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/dialog_new_order_spinner_Cat"
+        android:layout_alignStart="@+id/dialog_new_order_spinner_Cat">
+    </android.support.v7.widget.AppCompatSpinner>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/dialog_new_order_btn_new_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/dialog_new_order_spinner_SubCat"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:text="درخواست خدمت"
+        />
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "130109550461",
+    "firebase_url": "https://khoshcustomer.firebaseio.com",
+    "project_id": "khoshcustomer",
+    "storage_bucket": "khoshcustomer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130109550461:android:21257d443939c991",
+        "android_client_info": {
+          "package_name": "com.psb.ipack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130109550461-pd3ouhck6eohcregustlempqe2dtq2ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG_s0TmuZP07pATySA6hpa9q2caXIxLeo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

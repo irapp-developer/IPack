@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_order.fill_descr.Frg_fill_descr">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_fill_desc_lay_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_fill_desc_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="نام و نام خانوادگی" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_fill_desc_lay_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_fill_desc_lay_name">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_fill_desc_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="شماره تماس"
+            android:inputType="phone"
+            android:maxLines="3"
+            android:minLines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_fill_desc_lay_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_fill_desc_lay_number">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_fill_desc_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="آدرس"
+
+            android:maxLines="3"
+            android:minHeight="80dp"
+            android:minLines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_fill_desc_lay_descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_fill_desc_lay_address">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_fill_desc_descr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="توضیحات"
+            android:maxLines="3"
+            android:minHeight="80dp"
+            android:minLines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

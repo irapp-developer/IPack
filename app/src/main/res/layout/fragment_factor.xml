@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/frg_factor_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        tools:context=".new_order.Activity_new_order" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frg_factor_map"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/frg_factor_lay_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/frg_factor_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اطلاعات بیشتر"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/frg_factor_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="هزینه" 
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/frg_factor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_factor_lay_details"
+            android:layout_marginTop="5dp"
+            android:text="نام و نام خانوادگی" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/frg_factor_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_factor_name"
+            android:layout_marginTop="5dp"
+            android:text="شماره تماس" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/frg_factor_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_factor_phoneNumber"
+            android:layout_marginTop="5dp"
+            android:text="آدرس" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/frg_factor_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_factor_address"
+            android:layout_marginTop="5dp"
+            android:text="توضیحات" />
+    </RelativeLayout>
+
+</RelativeLayout>

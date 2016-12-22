@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_register_details_name_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_register_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_register_details_phone_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_register_details_name_lay">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_register_details_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_phone_number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/frg_register_details_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_register_details_phone_lay"></android.support.v7.widget.AppCompatSpinner>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/frg_register_details_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_register_details_province"></android.support.v7.widget.AppCompatSpinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_register_details_address_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_register_details_city">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_register_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_address" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frg_register_details_details_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_register_details_address_lay">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/frg_register_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_details" />
+    </android.support.design.widget.TextInputLayout>
+    <com.dd.CircularProgressButton
+        android:id="@+id/frg_register_details_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_below="@+id/frg_register_details_details_lay"
+        app:cpb_cornerRadius="50dp"
+        app:cpb_iconComplete="@drawable/ic_tick_white"
+        app:cpb_iconError="@drawable/ic_refresh_white"
+        app:cpb_selectorComplete="@drawable/selector_circle_progress_success"
+        app:cpb_selectorError="@drawable/selector_circle_progress_error"
+        app:cpb_selectorIdle="@drawable/selector_circle_progress_idle"
+        app:cpb_textError="@string/error_details"
+        app:cpb_textIdle="@string/action_register"
+        />
+</RelativeLayout>
